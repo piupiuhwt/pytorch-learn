@@ -11,6 +11,9 @@ def os_infos():
 
 
 def base_infos():
-    print("PyTorch version is: {}".format(torch.__version__))
-    print("you should know that cuda is available: {}, and version is : {}".format(torch.cuda.is_available(), torch.version.cuda))
-    print("cuda device 0 is {}".format(torch.cuda.get_device_name(0)))
+    print("---------------------pytorch and cuda info----------------------------")
+    print("| PyTorch version is: ---- {} ----".format(torch.__version__))
+    print("| you should know that cuda is available: ---- {} ---- , and version is : ---- {} ----".format(torch.cuda.is_available(), torch.version.cuda))
+    print("| cuda device 0 is : ---- {} ----".format(torch.cuda.get_device_name(0)))
+    print("----------------------------------------------------------------------")
+    print()
